@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export const size = plugin(({ matchUtilities, theme }) => {
+export const size = plugin(({ matchUtilities, addUtilities, theme }) => {
   matchUtilities({
     "size": (value) => ({
       "block-size": value,
@@ -8,5 +8,11 @@ export const size = plugin(({ matchUtilities, theme }) => {
     }),
   }, {
     values: theme("size"),
+  });
+  addUtilities({
+    ".size-screen": {
+      "block-size": theme("height.screen"),
+      "inline-size": theme("width.screen"),
+    },
   });
 });

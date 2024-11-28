@@ -10,3 +10,7 @@
     block-size: 5px;
     inline-size: 5px
 }
+.size-screen {
+    block-size: 100svb;
+    inline-size: 100svi
+}

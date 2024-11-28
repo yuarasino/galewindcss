@@ -28,7 +28,7 @@ Deno.test("width", async () => {
   assertEquals(actual.trim(), expected.trim());
 });
 
-Deno.test("height", async () => {
+Deno.test("size", async () => {
   const actual = await generateUtilitiesCss(
     galewind,
     "size-4 size-1/2 size-screen size-[5px]",
@@ -36,6 +36,32 @@ Deno.test("height", async () => {
 
   const expected = await Deno.readTextFile(
     "./test/plugins/size.css.txt",
+  );
+
+  assertEquals(actual.trim(), expected.trim());
+});
+
+Deno.test("margin", async () => {
+  const actual = await generateUtilitiesCss(
+    galewind,
+    "m-4 my-px mt-screen -ml-screen mx-[5px]",
+  );
+
+  const expected = await Deno.readTextFile(
+    "./test/plugins/margin.css.txt",
+  );
+
+  assertEquals(actual.trim(), expected.trim());
+});
+
+Deno.test("padding", async () => {
+  const actual = await generateUtilitiesCss(
+    galewind,
+    "p-4 py-px pt-screen pl-screen px-[5px]",
+  );
+
+  const expected = await Deno.readTextFile(
+    "./test/plugins/padding.css.txt",
   );
 
   assertEquals(actual.trim(), expected.trim());
