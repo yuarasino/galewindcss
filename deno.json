@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "license": "MIT",
   "tasks": {
-    "test": "deno test"
+    "test": "deno test --allow-sys --allow-read"
   },
   "imports": {
+    "~/": "./src/",
     "@std/assert": "jsr:@std/assert@^1.0.8",
-    "tailwindcss": "npm:tailwindcss@^3.4.15"
+    "postcss": "npm:postcss@^8.4.49",
+    "tailwindcss": "npm:tailwindcss@^3.4.15",
+    "tailwindcss/plugin": "npm:tailwindcss@^3.4.15/plugin.js"
   },
   "exports": {
     ".": "./src/mod.ts"

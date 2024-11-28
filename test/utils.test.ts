@@ -1,5 +1,5 @@
 import { assertEquals } from "@std/assert";
-import { defineConfig } from "../src/utils.ts";
+import { defineConfig } from "~/utils.ts";
 
 import type { Config } from "tailwindcss";
 

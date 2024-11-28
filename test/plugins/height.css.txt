@@ -1,0 +1,12 @@
+.h-1\/2 {
+    block-size: 50%
+}
+.h-4 {
+    block-size: 1rem
+}
+.h-\[5px\] {
+    block-size: 5px
+}
+.h-screen {
+    block-size: 100svb
+}

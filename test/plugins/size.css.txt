@@ -1,0 +1,12 @@
+.size-1\/2 {
+    block-size: 50%;
+    inline-size: 50%
+}
+.size-4 {
+    block-size: 1rem;
+    inline-size: 1rem
+}
+.size-\[5px\] {
+    block-size: 5px;
+    inline-size: 5px
+}

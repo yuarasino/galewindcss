@@ -1,0 +1,12 @@
+.w-1\/2 {
+    inline-size: 50%
+}
+.w-4 {
+    inline-size: 1rem
+}
+.w-\[5px\] {
+    inline-size: 5px
+}
+.w-screen {
+    inline-size: 100svi
+}
