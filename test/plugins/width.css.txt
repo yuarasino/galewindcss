@@ -7,6 +7,6 @@
 .w-\[5px\] {
     inline-size: 5px
 }
-.w-screen {
+.w-vw {
     inline-size: 100svi
 }

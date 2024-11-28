@@ -1,0 +1,15 @@
+.-il-vw {
+    inset-inline-start: -100svi
+}
+.i-4 {
+    inset: 1rem
+}
+.it-vh {
+    inset-block-start: 100svb
+}
+.ix-\[5px\] {
+    inset-inline: 5px
+}
+.iy-px {
+    inset-block: 1px
+}

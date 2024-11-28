@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export const padding = plugin(({ matchUtilities, addUtilities, theme }) => {
+export const padding = plugin(({ matchUtilities, theme }) => {
   matchUtilities({
     "p": (value) => ({
       padding: value,
@@ -25,19 +25,5 @@ export const padding = plugin(({ matchUtilities, addUtilities, theme }) => {
     }),
   }, {
     values: theme("padding"),
-  });
-  addUtilities({
-    ".pt-screen": {
-      paddingBlockStart: theme("height.screen"),
-    },
-    ".pb-screen": {
-      paddingBlockEnd: theme("height.screen"),
-    },
-    ".pl-screen": {
-      paddingInlineStart: theme("width.screen"),
-    },
-    ".pr-screen": {
-      paddingInlineEnd: theme("width.screen"),
-    },
   });
 });

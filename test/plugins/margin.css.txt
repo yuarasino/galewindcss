@@ -1,18 +1,15 @@
+.-ml-vw {
+    margin-inline-start: -100svi
+}
 .m-4 {
     margin: 1rem
+}
+.mt-vh {
+    margin-block-start: 100svb
 }
 .mx-\[5px\] {
     margin-inline: 5px
 }
 .my-px {
     margin-block: 1px
-}
-.mt-screen {
-    margin-block-start: 100svb
-}
-.ml-screen {
-    margin-inline-start: 100svi
-}
-.-ml-screen {
-    margin-inline-start: -100svi
 }

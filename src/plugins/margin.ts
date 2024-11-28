@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export const margin = plugin(({ matchUtilities, addUtilities, theme }) => {
+export const margin = plugin(({ matchUtilities, theme }) => {
   matchUtilities({
     "m": (value) => ({
       margin: value,
@@ -26,31 +26,5 @@ export const margin = plugin(({ matchUtilities, addUtilities, theme }) => {
   }, {
     values: theme("margin"),
     supportsNegativeValues: true,
-  });
-  addUtilities({
-    ".mt-screen": {
-      marginBlockStart: theme("height.screen"),
-    },
-    ".mb-screen": {
-      marginBlockEnd: theme("height.screen"),
-    },
-    ".ml-screen": {
-      marginInlineStart: theme("width.screen"),
-    },
-    ".mr-screen": {
-      marginInlineEnd: theme("width.screen"),
-    },
-    ".-mt-screen": {
-      marginBlockStart: `-${theme("height.screen")}`,
-    },
-    ".-mb-screen": {
-      marginBlockEnd: `-${theme("height.screen")}`,
-    },
-    ".-ml-screen": {
-      marginInlineStart: `-${theme("width.screen")}`,
-    },
-    ".-mr-screen": {
-      marginInlineEnd: `-${theme("width.screen")}`,
-    },
   });
 });

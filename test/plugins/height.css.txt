@@ -7,6 +7,6 @@
 .h-\[5px\] {
     block-size: 5px
 }
-.h-screen {
+.h-vh {
     block-size: 100svb
 }

@@ -1,0 +1,15 @@
+.-left-vw {
+    inset-inline-start: -100svi
+}
+.inset-4 {
+    inset: 1rem
+}
+.inset-x-\[5px\] {
+    inset-inline: 5px
+}
+.inset-y-px {
+    inset-block: 1px
+}
+.top-vh {
+    inset-block-start: 100svb
+}
