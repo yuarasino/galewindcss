@@ -3,25 +3,25 @@ import plugin from "tailwindcss/plugin";
 export const margin = plugin(({ matchUtilities, addUtilities, theme }) => {
   matchUtilities({
     "m": (value) => ({
-      "margin": value,
+      margin: value,
     }),
     "my": (value) => ({
-      "margin-block": value,
+      marginBlock: value,
     }),
     "mx": (value) => ({
-      "margin-inline": value,
+      marginInline: value,
     }),
     "mt": (value) => ({
-      "margin-block-start": value,
+      marginBlockStart: value,
     }),
     "mb": (value) => ({
-      "margin-block-end": value,
+      marginBlockEnd: value,
     }),
     "ml": (value) => ({
-      "margin-inline-start": value,
+      marginInlineStart: value,
     }),
     "mr": (value) => ({
-      "margin-inline-end": value,
+      marginInlineEnd: value,
     }),
   }, {
     values: theme("margin"),
@@ -29,28 +29,28 @@ export const margin = plugin(({ matchUtilities, addUtilities, theme }) => {
   });
   addUtilities({
     ".mt-screen": {
-      "margin-block-start": theme("height.screen"),
+      marginBlockStart: theme("height.screen"),
     },
     ".mb-screen": {
-      "margin-block-end": theme("height.screen"),
+      marginBlockEnd: theme("height.screen"),
     },
     ".ml-screen": {
-      "margin-inline-start": theme("width.screen"),
+      marginInlineStart: theme("width.screen"),
     },
     ".mr-screen": {
-      "margin-inline-end": theme("width.screen"),
+      marginInlineEnd: theme("width.screen"),
     },
     ".-mt-screen": {
-      "margin-block-start": `-${theme("height.screen")}`,
+      marginBlockStart: `-${theme("height.screen")}`,
     },
     ".-mb-screen": {
-      "margin-block-end": `-${theme("height.screen")}`,
+      marginBlockEnd: `-${theme("height.screen")}`,
     },
     ".-ml-screen": {
-      "margin-inline-start": `-${theme("width.screen")}`,
+      marginInlineStart: `-${theme("width.screen")}`,
     },
     ".-mr-screen": {
-      "margin-inline-end": `-${theme("width.screen")}`,
+      marginInlineEnd: `-${theme("width.screen")}`,
     },
   });
 });

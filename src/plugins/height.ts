@@ -3,7 +3,7 @@ import plugin from "tailwindcss/plugin";
 export const height = plugin(({ matchUtilities, theme }) => {
   matchUtilities({
     "h": (value) => ({
-      "block-size": value,
+      blockSize: value,
     }),
   }, {
     values: theme("height"),

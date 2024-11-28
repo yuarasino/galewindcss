@@ -66,3 +66,16 @@ Deno.test("padding", async () => {
 
   assertEquals(actual.trim(), expected.trim());
 });
+
+Deno.test("textAlign", async () => {
+  const actual = await generateUtilitiesCss(
+    galewind,
+    "text-left text-right text-center text-justify",
+  );
+
+  const expected = await Deno.readTextFile(
+    "./test/plugins/textAlign.css.txt",
+  );
+
+  assertEquals(actual.trim(), expected.trim());
+});

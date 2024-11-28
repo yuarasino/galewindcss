@@ -3,41 +3,41 @@ import plugin from "tailwindcss/plugin";
 export const padding = plugin(({ matchUtilities, addUtilities, theme }) => {
   matchUtilities({
     "p": (value) => ({
-      "padding": value,
+      padding: value,
     }),
     "py": (value) => ({
-      "padding-block": value,
+      paddingBlock: value,
     }),
     "px": (value) => ({
-      "padding-inline": value,
+      paddingInline: value,
     }),
     "pt": (value) => ({
-      "padding-block-start": value,
+      paddingBlockStart: value,
     }),
     "pb": (value) => ({
-      "padding-block-end": value,
+      paddingBlockEnd: value,
     }),
     "pl": (value) => ({
-      "padding-inline-start": value,
+      paddingInlineStart: value,
     }),
     "pr": (value) => ({
-      "padding-inline-end": value,
+      paddingInlineEnd: value,
     }),
   }, {
     values: theme("padding"),
   });
   addUtilities({
     ".pt-screen": {
-      "padding-block-start": theme("height.screen"),
+      paddingBlockStart: theme("height.screen"),
     },
     ".pb-screen": {
-      "padding-block-end": theme("height.screen"),
+      paddingBlockEnd: theme("height.screen"),
     },
     ".pl-screen": {
-      "padding-inline-start": theme("width.screen"),
+      paddingInlineStart: theme("width.screen"),
     },
     ".pr-screen": {
-      "padding-inline-end": theme("width.screen"),
+      paddingInlineEnd: theme("width.screen"),
     },
   });
 });
